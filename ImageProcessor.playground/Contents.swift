@@ -6,7 +6,11 @@
 // Have some method or interface to apply default filter formulas and parameters that can be accessed by name.
 
 // The indexing formula is:
-//  
+//  i = x + width*y;
+
+// (Just in case) and the reverse operation is:
+// x = i % width;    // % is the "modulo operator", the remainder of i / width;
+// y = i / width;    // where "/" is an integer division
 
 import UIKit
 
