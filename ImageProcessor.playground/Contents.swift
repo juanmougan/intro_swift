@@ -17,3 +17,15 @@ import UIKit
 let image = UIImage(named: "sample")
 
 // Process the image!
+// TODO Add another parameter to define the transformation
+func processImage(image: UIImage) -> UIImage {
+    let rgba = RGBAImage(image: image)!
+    for y in 0..<rgba.height {
+        for x in 0..<rgba.width {
+            let index = y * rgba.width + x
+            var pixel = rgba.pixels[index]
+            // TODO do the transformation here
+        }
+    }
+    return rgba.toUIImage()
+}
